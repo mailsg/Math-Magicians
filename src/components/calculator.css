@@ -5,9 +5,22 @@
   font-size: 100%;
 }
 
+.header {
+  color: black;
+  padding-left: 5rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.App {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
   align-items: center;
 }
 
@@ -64,4 +77,20 @@ input[type='button'] {
 
 input[type='button']:active {
   background: #ccc;
+}
+
+.quotation div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.quotation p {
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  font-style: italic;
+  background: transparent;
 }
