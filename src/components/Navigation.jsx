@@ -1,20 +1,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './Navigation.module.css';
+import './Navigation.css';
 
 const Navbar = [
-  { to: '/home', text: 'Home  |' },
+  { to: '/', text: 'Home  |' },
   { to: '/calculator', text: 'Calculator  |' },
   { to: '/hittheapi', text: 'Quote  |' },
 ];
 
 const Nav = () => (
-  <nav className={styles.navigation}>
+  <nav className="navigation">
     <h1>Math Magicians</h1>
-    <ul className={styles.item}>
+    <ul className="item">
       {Navbar.map((link) => (
         <li key={link.to}>
-          <NavLink to={link.to} className={styles.links}>
+          <NavLink to={link.to} className="links">
             {link.text}
           </NavLink>
         </li>
