@@ -17,6 +17,7 @@ const Calculator = () => {
 
   return (
     <div className="container">
+      <h2>Let`s do some math!</h2>
       <div className="calculator">
         <div className="screen">
           <input type="text" value={calculatorState.next || calculatorState.total || '0'} readOnly className="screen-color" />
