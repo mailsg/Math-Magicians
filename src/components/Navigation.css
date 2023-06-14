@@ -1,0 +1,31 @@
+.navigation {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: chocolate;
+}
+
+h1 {
+  font-size: 54px;
+  margin: 20px;
+}
+
+.item {
+  display: flex;
+  font-size: 24px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 20px;
+  list-style: none;
+  margin-right: 1rem;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+}
+
+.links:hover {
+  color: blue;
+}

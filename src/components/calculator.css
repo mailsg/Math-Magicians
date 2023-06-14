@@ -5,30 +5,43 @@
   font-size: 100%;
 }
 
+body {
+  background-image: url('../bk_pic_.png');
+}
+
+.header {
+  color: black;
+  padding-left: 5rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.App {
+  text-align: center;
+  font-family: sans-serif;
+}
+
 .calculator {
-  margin: 100px;
-  min-width: 400px;
+  margin: 10rem;
+  min-width: 30rem;
+  margin-left: 40rem;
+  margin-right: 0;
+  margin-top: 6rem;
 }
 
 .screen input {
   width: 100%;
-  height: 60px;
+  height: 4rem;
   background: darkgray;
   border: 1px solid #8f8f8f;
   color: #fff;
   padding: 0.5rem;
   text-align: right;
   font-size: 1.5rem;
-}
-
-.screen-color {
-  background-color: rgb(161, 161, 161);
 }
 
 .row-one,
@@ -55,6 +68,12 @@
   grid-column: 1 / span 2;
 }
 
+h2 {
+  font-size: 2rem;
+  position: relative;
+  top: -8rem;
+}
+
 input[type='button'] {
   border: 1px solid #8f8f8f;
   padding: 10px 20px;
@@ -63,8 +82,29 @@ input[type='button'] {
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 input[type='button']:active {
   background: #ccc;
+}
+
+.quotation div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* flex-direction: column; */
+  height: 35rem;
+  padding: 0 20px;
+  text-align: justify;
+}
+
+.quotation p {
+  margin: 1rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: black;
+  font-style: italic;
+  background: transparent;
 }
